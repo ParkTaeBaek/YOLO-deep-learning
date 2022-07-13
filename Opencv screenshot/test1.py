@@ -21,7 +21,7 @@ while (True) :
         out.write(frame)
         cv2.imshow('frame', frame)
         
-        if k == ord('a') :
+        if k == ord('s') :
             print("Screenshot saved...")
             cv2.imwrite('result/screenshot{}.jpg'.format(cnt), frame, params=[cv2.IMWRITE_PNG_COMPRESSION,0])
             cnt += 1
